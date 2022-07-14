@@ -195,9 +195,6 @@ var netAmount = +prompt("Enter Net Amount Payable (within Due Date)");
 var net_Amount_Payable = numberOfUnit * ChargesOfUnit;
 var Gross_Amount_Payable = netAmount + LatePaymentSurcharge;
 
-
-
-
 document.write(`<h1>K-Electric Bill <br> </h1>`)
 document.write(`<p>Customer Name: <b>${customerName}</b> <br> </p>`)
 document.write(`<p>Month: <b>${Month[currentMonth]}</b> <br></p>`)
@@ -209,4 +206,82 @@ document.write(`<p>Late Payment Surcharge: <b>${LatePaymentSurcharge}</b> <br> <
 document.write(`<p>Gross Amount Payable (after Due Date): <b>${Gross_Amount_Payable}</b> <br> </p>`)
 
 
+// Chapter 35-38 : Functions
+// Q3
 
+function sum() {
+    var firstNum = +prompt("Enter you first Number: ")
+    var secNum = +prompt("Enter you Last Number: ")
+
+    var Numbers = firstNum + secNum;
+    document.write("Sum of two numbers: " + parseInt(Numbers));
+}
+
+// Q4
+
+function calculator(firstNum, secNum) {
+    var firstNum = +prompt("Enter you first Number: ")
+    var secNum = +prompt("Enter you Last Number: ");
+    var operator = prompt("Enter your operator : (+,-,*,/,%")
+    if (operator === "+") {
+
+        result = firstNum + secNum;
+        document.write("Sum of two number is : " + result)
+
+    }
+    else if (operator === "-") {
+
+        result = firstNum - secNum;
+        document.write("Subtraction of two number is : " + result)
+
+    }
+    else if (operator === "*") {
+
+        result = firstNum * secNum;
+        document.write("Multiplication of two number is : " + result)
+
+    }
+    else if (operator === "/") {
+
+        result = firstNum / secNum;
+        document.write("Divide of two number is : " + Math.round(result))
+
+    }
+    else if (operator === "%") {
+        result = firstNum % secNum;
+        document.write("Reminder of two number is : " + result)
+
+    }
+    else {
+        document.write("Invalid result")
+    }
+}
+
+// Q5
+
+function squares(squareNum) {
+
+    var squareNum = +prompt("Enter a number to find the sqaure of it  : ")
+
+    var findSquare = squareNum * squareNum;
+
+    document.write("Reminder of two number is : " + findSquare)
+
+}
+
+// Q9
+
+function area(width, height) {
+
+    var width = +prompt("Enter a width :");
+    var height = +prompt("Enter a height :");
+
+    A = width * height;
+
+    document.write("(Argument as variable) Area of the Rectangle is " + A);
+
+    document.write("<br>")
+
+    var area = 45 * 54;
+    document.write("(Argument as value) Area of the Rectangle is : " + area)
+}
