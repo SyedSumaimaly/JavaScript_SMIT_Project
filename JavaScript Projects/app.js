@@ -468,6 +468,63 @@ document.write(`
 `)
 
 
+// chapter 17 - 20
+// Question 1
+
+var mulArray = [[], [], []]
+document.write("var mulArray = [ [ ],[ ],[ ] ]");
+
+// Question 2
+
+var mulArray = [[0, 1, 2, 3], [1, 0, 1, 2], [2, 1, 0, 1]]
+document.write(mulArray[0] + "<br>" + mulArray[1] + "<br>" + mulArray[2] + "<br>");
+
+// Question 3
+
+for (i = 1; i <= 10; i++) {
+    document.write(i + "<br>")
+}
+
+// Question 4
+
+var userNo = +prompt("Enter a Number  for table : ")
+var userSecondnumber = +prompt("Enter a Number  for table you end : ")
+for (i = 1; i <= userSecondnumber; i++) {
+    document.write(userNo + "  " + "X" + " " + i +"  " + "=" + "  " + userNo * i + "<br>")
+}
+
+// Question 5
+
+fruits = ["apple", "banana", "mango", "orange", "strawberry"]
+for (var i = 0; i < fruits.length; i++) {
+    document.write(fruits[i] + "<br>")
+}
+
+for (var i = 0; i < fruits.length; i++) {
+    document.write("Element at index  " + i + " is " + fruits[i], "<br>")
+}
+
+// Question 7
+
+items = ["cake", "apple pie", "cookie", "chips", "patties"];
+userInput = prompt("Enter a snack :")
+flag = false;
+for (i = 0; i <= items.length; i++) {
+    if (userInput == items[i]) {
+
+        flag = true;
+
+        userInput = items[i];
+        index = i;
+    }
+}
+if (flag == true) {
+    document.write(userInput + " is available at index " + index + " in our bakery")
+}
+else {
+    document.write(userInput + " is not available")
+}
+
 // Chapter 26-30 : MATH METHODS
 // Question 1
 
