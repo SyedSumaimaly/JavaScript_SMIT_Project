@@ -55,6 +55,112 @@ var quantity = prompt("Enter quantity of a product");
 
 alert(name + " ordered " + quantity + " " + product + " on XYZ Clothing Store");
 
+// Chapter 6-9
+
+// Question 1 
+
+var a = 10;
+document.write("Result:");
+document.write("<br>");
+document.write("Value of a is: " + a);
+document.write("<br>");
+document.write("------------------------------------------")
+document.write("<br><br>");
+
+
+++a;
+document.write("The value of ++a is : " + a);
+document.write("<br>");
+document.write("Now the value of a : " + a);
+document.write("<br>");
+document.write("<br>");
+
+
+document.write("The value of a++ is : " + a);
+document.write("<br>");
+a++;
+document.write("Now the value of a : " + a);
+document.write("<br>");
+document.write("<br>");
+
+
+
+
+--a;
+document.write("The value of --a is : " + a);
+document.write("<br>");
+document.write("Now the value of a : " + a);
+document.write("<br>");
+document.write("<br>");
+
+
+document.write("The value of a-- is : " + a);
+document.write("<br>");
+a--;
+document.write("Now the value of a : " + a);
+
+// Question 3
+var name = prompt("Enter your name : ");
+document.write("Welcome " + name);
+
+// Question 6
+
+var nameSub1 = prompt("Enter a your subject name : ");
+var subMarks1 = parseInt(prompt("Enter Obtained marks of this subject"));
+
+var nameSub2 = prompt("Enter a your subject name : ");
+var subMarks2 = parseInt(prompt("Enter Obtained marks of this subject"));
+
+var nameSub3 = prompt("Enter a your subject name : ");
+var subMarks3 = parseInt(prompt("Enter Obtained marks of this subject"));
+
+
+var eachmarks = 100;
+var eachpercentage1 = subMarks1 / eachmarks * 100;
+var eachpercentage2 = subMarks2 / eachmarks * 100;
+var eachpercentage3 = subMarks3 / eachmarks * 100;
+
+var totalMarksStd = 300;
+var obtainedMarks = subMarks1 + subMarks2 + subMarks3;
+var Percentage = obtainedMarks / totalMarksStd * 100;
+document.write(`<table>
+<tr>  
+    <th>Subjects</th>  
+    <th>Total Marks</th>  
+    <th>Obtained Marks</th> 
+    <th>Percentage</th>  
+</tr>  
+
+<tr>
+    <td>${nameSub1}</td>
+    <td>${eachmarks}</td>
+    <td>${subMarks1}</td>
+    <td>${eachpercentage1}%</td>
+</tr>
+
+<tr>
+<td>${nameSub2}</td>
+<td>${eachmarks}</td>
+<td>${subMarks2}</td>
+<td>${eachpercentage2}%</td>
+</tr>
+
+<tr>
+<td>${nameSub3}</td>
+<td>${eachmarks}</td>
+<td>${subMarks3}</td>
+<td>${eachpercentage3}%</td>
+</tr>  
+
+
+<tr>
+<td></td>
+<td>${totalMarksStd}</td>
+<td>${obtainedMarks}</td>
+<td>${Percentage}%</td>
+</tr>  
+</table>`)
+
 // Chapter 26-30 : MATH METHODS
 // Question 1
 
@@ -285,3 +391,31 @@ function area(width, height) {
     var area = 45 * 54;
     document.write("(Argument as value) Area of the Rectangle is : " + area)
 }
+
+// Chapter 38-42 : Functions
+// Q2
+
+function LeapYear(year) {
+    var year = prompt("Enter any Year");
+
+    if (year % 4 === 0) {
+        alert("It's a leap year")
+    } else {
+        alert("It's not a leap year")
+    }
+}
+
+LeapYear(2000);
+
+// Q3
+
+function triangleLength() {
+    var a = +prompt("Enter Length of a triangle side a")
+    var b = +prompt("Enter Length of a triangle side b")
+    var c = +prompt("Enter Length of a triangle side c")
+
+    var S = a + b + c / 2
+    var Area = S * S - a * S - b * S - c
+    alert(Area)
+}
+triangleLength()
