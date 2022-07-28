@@ -161,6 +161,313 @@ document.write(`<table>
 </tr>  
 </table>`)
 
+// chapter 9 - 11
+// question 1 
+
+var city = prompt("Enter a city");
+if ((city === "Karachi" || city === "karachi")) {
+    alert("Welcome to city of lights")
+}
+else {
+    alert("Invalid Input")
+}
+
+// question 2 
+
+var gender = prompt("Enter a gender Male or Female: ");
+if ((gender === "male" || gender === "Male")) {
+    alert("Good Morning Sir.")
+}
+
+else if ((gender === "female" || gender === "Female")) {
+    alert("Good Morning Ma'am.")
+}
+
+else {
+    alert("Invalid Gender");
+}
+
+// question 4
+
+var fuel = +prompt("Enter a fuel remain in your car.");
+
+if (fuel < 0.25) {
+    alert("Please refill the fuel in your car")
+}
+else {
+    alert("No need to refill the fuel in your car")
+}
+
+// question 7
+
+var user = +prompt("Enter a number");
+var guessNo = 2;
+if (user === guessNo) {
+    alert("Bingo! Correct answer")
+}
+else if (user === ++guessNo) {
+    alert("Close enough to the correct answer")
+}
+else {
+    alert("Sorry! Incorrect answer")
+}
+
+// question 8
+
+var number = +prompt("Enter a number : ");
+if (number % 3 == 0) {
+    alert('divisible by 3')
+}
+else {
+    alert("not divisible by 3")
+
+}
+
+// question 9
+
+var number = +prompt("Enter a number : ");
+if (number % 2 == 0) {
+    alert('Even Number')
+}
+else {
+    alert("Odd Number")
+}
+
+// question 10
+
+var temp = prompt("Enter a temprature :");
+if (temp >= 40) {
+    alert("It is too hot outside.")
+}
+else if ((temp >= 30)) {
+    alert("The Weather today is Normal")
+}
+else if ((temp >= 20)) {
+    alert("Today’s Weather is cool.")
+}
+else {
+    alert("OMG! Today’s weather is so Cool.")
+}
+
+// question 11
+
+var num1 = +prompt("Enter a number 1")
+var num2 = +prompt("Enter a number 2")
+var opt = prompt("Enter an operator do you want to perfome (+,-,*,/,%");
+
+if (opt === "+") {
+
+    var result = num1 + num2
+    alert(`Addition of ${num1} & ${num2} is ${result}`)
+}
+if (opt === "-") {
+
+    var result = num1 - num2
+    alert(`Subtraction of ${num1} & ${num2} is ${result}`)
+}
+if (opt === "*") {
+
+    var result = num1 * num2
+    alert(`Multiplication of ${num1} & ${num2} is ${result}`)
+}
+if (opt === "/") {
+
+    var result = num1 + num2
+    alert(`Division of ${num1} & ${num2} is ${result}`)
+}
+if (opt === "%") {
+
+    var result = num1 + num2
+    alert(`Reminder of ${num1} & ${num2} is ${result}`)
+}
+else {
+    alert("Invalid Operator")
+}
+
+// Chapter 12 - 13
+// Question 1
+
+var userInput = prompt("Enter a Character i.e. : a-z,A-Z,0-9")
+var asciiCode = userInput.charCodeAt(0);
+
+// The charCodeAt() method returns the Unicode of the character at a specified index (position) in a string.
+// A-Z (65 to 90)
+// a-z (97-122)
+// 0-9 (48-57)
+
+if (asciiCode >= 65 && asciiCode <= 90) {
+    alert(userInput + " is a uppercase letter")
+}
+else if (asciiCode >= 97 && asciiCode <= 122) {
+    alert(userInput + " is a Lowercase letter")
+}
+else if (asciiCode >= 48 && asciiCode <= 57) {
+    alert(userInput + " is a number")
+}
+else {
+    alert("Invalid Input")
+}
+
+// Question 2
+
+var UserNumber1 = +prompt("Enter a number 1 ")
+var UserNumber2 = +prompt("Enter a number 2 ")
+
+if (UserNumber1 > UserNumber2) {
+    alert(UserNumber1 + " is greater than " + UserNumber2)
+}
+else if (UserNumber2 > UserNumber1) {
+    alert(UserNumber2 + " is greater than " + UserNumber1)
+}
+else if (UserNumber2 === UserNumber1) {
+    alert(UserNumber2 + " is equal to  " + UserNumber1)
+}
+else {
+    alert("Invalid Numbers")
+}
+
+// Question 3
+
+var numberFinder = +prompt("Enter a number : ")
+
+if (numberFinder > 0) {
+    alert("Positive number")
+}
+else if (numberFinder < 0) {
+    alert("Negative number")
+}
+else if (numberFinder === 0) {
+    alert("Zero")
+}
+else {
+    alert("Invalid Input")
+}
+
+// Question 4
+
+var cha = prompt("Enter a character (a-z, A-z)");
+
+if ((cha == "a") || (cha == "A") || (cha == "e") || (cha == "E") || (cha == "i") || (cha == "I") || (cha == "O") || (cha == "o") || (cha == "u") || (cha == "U")) {
+    alert(true)
+}
+else {
+    alert(false)
+}
+
+// Question 5
+
+var actualPass = "hjhugKHAFohuf";
+var InputPass = prompt("Enter a Password");
+if (InputPass === actualPass) {
+    alert("Correct! The password you entered matches the original password")
+}
+else if (InputPass == "") {
+    alert("Please enter your password")
+}
+else {
+    alert("Incorrect password")
+}
+
+// Question 6
+
+var greeting;
+var hour = 13;
+if (hour < 18) {
+    greeting = "Good day";
+    alert(greeting)
+}
+else {
+    greeting = "Good evening";
+    alert(greeting)
+}
+
+// Chapter 14-16 ARRAY
+// Question 3 
+
+var stringArray = ["Karachi", "Lahore", "Islambad"];
+
+// Question 4
+
+var numberArray = [1, 2, 4, 5, 6, 66, 67];
+
+// Question 6
+
+var mixArray = ["Karachi", "Lahore", "Islambad", 1, 2, 4, 5, 6, 96, 87];
+
+// Question 7
+
+var qualificationsInPak = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.Phil.", "PhD"]
+
+document.write("<h1>Qualification</h1><br>")
+document.write(`<h2>1) ${qualificationsInPak[0]}</h2>`)
+document.write(`<h2>2) ${qualificationsInPak[1]}</h2>`)
+document.write(`<h2>3) ${qualificationsInPak[2]}</h2>`)
+document.write(`<h2>4) ${qualificationsInPak[3]}</h2>`)
+document.write(`<h2>5) ${qualificationsInPak[4]}</h2>`)
+document.write(`<h2>6) ${qualificationsInPak[5]}</h2>`)
+document.write(`<h2>7) ${qualificationsInPak[6]}</h2>`)
+document.write(`<h2>8) ${qualificationsInPak[7]}</h2>`)
+
+// Question 10
+
+var studentScores = [67, 87, 98, 97, 67, 80, 90];
+document.write("Scores of Students :  " + studentScores);
+document.write("<br>")
+var sortedScores = studentScores.sort()
+document.write("Ordered Scores of Students :  " + studentScores);
+
+// Question 11
+
+var citiesArray = ["karachi", "Queeta", "Peshawar", "lahore", "Islamabad"]
+var selectedCities = citiesArray.slice(3, 5);
+document.write("Cities List  : <br> " + citiesArray + "<br>");
+document.write("Cities List  : <br> " + selectedCities);
+
+// Question 12
+
+var arr = ["This", "is", "my", "cat"];
+document.write("<h1>Array: </h1>");
+document.write(`<h1>${arr}</h1><br>`);
+
+var joined = arr.join(" ");
+
+document.write("<h1>String: </h1>");
+document.write(`<h1>${joined}</h1><br>`);
+
+// Question 15
+
+var mobiles = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+
+document.write(`
+    <div class="dropDown">
+    <select>
+        <option>${mobiles[0]}</option>
+        <option>${mobiles[1]}</option>
+        <option>${mobiles[2]}</option>
+        <option>${mobiles[3]}</option>
+        <option>${mobiles[4]}</option>
+        <option>${mobiles[5]}</option>
+    </select>
+    </div>
+    
+    <style>   
+        .dropDown{
+            width:60%;
+            margin:20px auto;
+            text-align:center;
+        }
+        select {
+            border: none;
+            width: 40%;
+            padding: 10px;
+            font-size: 18px;
+            box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+            font-family: p-l ;
+        }
+    </style>
+`)
+
+
 // Chapter 26-30 : MATH METHODS
 // Question 1
 
