@@ -490,7 +490,7 @@ for (i = 1; i <= 10; i++) {
 var userNo = +prompt("Enter a Number  for table : ")
 var userSecondnumber = +prompt("Enter a Number  for table you end : ")
 for (i = 1; i <= userSecondnumber; i++) {
-    document.write(userNo + "  " + "X" + " " + i +"  " + "=" + "  " + userNo * i + "<br>")
+    document.write(userNo + "  " + "X" + " " + i + "  " + "=" + "  " + userNo * i + "<br>")
 }
 
 // Question 5
@@ -783,3 +783,65 @@ function triangleLength() {
     alert(Area)
 }
 triangleLength()
+
+// Q1
+
+var a = +prompt("Wirite any number to calculate power")
+var b = +prompt("Write power of previous digit")
+
+function power() {
+    var c = a * b * b * b
+    alert(c)
+}
+
+power()
+
+// Q8
+
+var distance = +prompt("Enter distance between two cities in KM")
+
+function inMeter(){
+     var meter = distance * 1000
+     document.write("Given Distance in Meter is " +  meter);
+}
+
+function inFoot(){
+    var Foot = distance * 3280.839895
+    document.write("<br>")
+    document.write("Given Distance in Foot is " +  Foot);
+}
+
+function inInches(){
+    var Inches = distance * 39370.07874
+    document.write("<br>")
+    document.write("Given Distance in Inches is " +  Inches);
+}
+
+function inCM(){
+    var CM = distance *  100000
+    document.write("<br>")
+    document.write("Given Distance in Centimeter is " +  CM);
+}
+
+
+inMeter()
+inFoot()
+inInches()
+inCM()
+
+// Q9
+
+var workingHour = +prompt("Enter ur Overtime in Hours")
+
+function overTime() {
+    if (workingHour >= 48) {
+        var pay = workingHour * 12
+        document.write("Your over time pay is " + pay);
+    
+    }elseif (workingHour < 48)
+    {
+        document.write("Your are not eligible for over time pay");
+    }
+}
+
+overTime()
